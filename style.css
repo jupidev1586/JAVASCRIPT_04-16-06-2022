@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   height: 100vh;
   font-family: 'Kdam Thmor Pro', sans-serif;
+  background: #333;
 }
 
 h1 {
@@ -75,25 +76,27 @@ input{
   text-align: center;
   box-shadow: 0 4px rgba(0,0,0,0.2);
   background-color: #f1faeb;
+  color: #333;
 }
 
 /* add input hover effect */
 input:hover, .hovered-key {
   border: 0 solid #000;
-  color: #495069;
-  background-color: #8f5fda;
+  color: #ffffff;
+  background-color: #4672ec;
   border-radius: 4px;
   width: 60px;
   height: 50px;
   float: left;
   margin: 5px;
   font-size: 20px;
-  box-shadow: 0 4px #644294;
+  box-shadow: 0 4px #164368;
 }
 /* hover */
 .operator:hover{
   background-color: #e7f56b;
   box-shadow: 0 4px #b7c259;
+  color: #333;
 }
 /* hover */
 #clear:hover{
