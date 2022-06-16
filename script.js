@@ -1,31 +1,19 @@
-// document.onkeydown = checkKeycode
-
-// function checkKeycode(e) {
-//   let keycode;
-//   if (window.event)
-//     {keycode = window.event.keyCode;}
-//   else if (e)
-//     {keycode = e.which;}
-//   alert("keycode: " + keycode);
-// }
-
-
-// This function clear all the values
+// Clear all the values
 function clearScreen() {
   document.getElementById("answer").value = "";
 }
 
 
-// This function display values
+// Display values
 function display(value) {
   document.getElementById("answer").value += value;
 }
 
-// This function evaluates the expression and return result
+// Evaluates the expression and return result
 function calculate() {
-  let p = document.getElementById("answer").value;
-  let q = eval(p);
-  document.getElementById("answer").value = q;
+  let answerInput = document.getElementById("answer").value;
+  let result = Function("return " + answerInput)();
+  document.getElementById("answer").value = result;
 }
 
 
@@ -92,8 +80,5 @@ document.addEventListener('keydown', function(event) {
     default:
       console.log('Non hai selezionato alcuna operazione');
   }
-
-  
-
 
 });
